@@ -1,4 +1,4 @@
-# 🔐 Code Language Studio
+# 🔐 Code Language
 
 > A modern, responsive, and user-friendly **Text Encoder & Decoder** built with **HTML, CSS, and JavaScript**.
 
@@ -56,7 +56,7 @@ assets/code-language-encoder.png
 Enable GitHub Pages and replace the link below.
 
 ```
-https://probal2005.github.io/Code-Language-Studio/
+https://github.com/probal2005/Code-Language.git/
 ```
 
 ---
@@ -92,13 +92,13 @@ Code-Language-Studio
 Clone the repository
 
 ```bash
-git clone https://github.com/probal2005/Code-Language-Studio.git
+git clone https://github.com/probal2005/Code-Language.git
 ```
 
 Open the folder
 
 ```bash
-cd Code-Language-Studio
+cd Code-Language
 ```
 
 Run the project by opening
