@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Language Encoder</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="left">
+            <h1>🔐 Code Language Studio</h1>
+            <p>Professional Text Encoder & Decoder</p>
+        </div>
+
+        <div class="right">
+            <button id="themeBtn">🌙 Dark</button>
+            <button id="settingBtn">⚙ Settings</button>
+        </div>
+    </header>
+
+    <div class="grid">
+
+        <!-- ===================== -->
+        <!-- Encode Panel -->
+        <!-- ===================== -->
+
+        <div class="panel">
+
+            <h2>Encode Text</h2>
+
+            <textarea
+                id="encodeInput"
+                placeholder="Type your original message..."></textarea>
+
+            <div class="toolbar">
+
+                <button id="pasteEncode">
+                    📥 Paste
+                </button>
+
+                <button id="downloadEncode">
+                    💾 Download
+                </button>
+
+                <button id="uploadEncode">
+                    📂 Upload
+                </button>
+
+                <input
+                    type="file"
+                    id="fileEncode"
+                    hidden
+                    accept=".txt">
+
+            </div>
+
+            <div class="controls">
+
+                <button
+                    class="encode"
+                    id="encodeBtn">
+
+                    🔐 Encode
+
+                </button>
+
+                <button
+                    class="copy"
+                    id="copyEncode">
+
+                    📋 Copy
+
+                </button>
+
+                <button
+                    class="clear"
+                    id="clearEncode">
+
+                    🗑 Clear
+
+                </button>
+
+            </div>
+
+            <div class="stats">
+
+                <span>
+                    Characters:
+                    <b id="char1">0</b>
+                </span>
+
+                <span>
+                    Words:
+                    <b id="word1">0</b>
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- ===================== -->
+        <!-- Decode Panel -->
+        <!-- ===================== -->
+
+        <div class="panel">
+
+            <h2>Decode Text</h2>
+
+            <textarea
+                id="decodeInput"
+                placeholder="Paste encoded text..."></textarea>
+
+            <div class="toolbar">
+
+                <button id="pasteDecode">
+                    📥 Paste
+                </button>
+
+                <button id="downloadDecode">
+                    💾 Download
+                </button>
+
+                <button id="uploadDecode">
+                    📂 Upload
+                </button>
+
+                <input
+                    type="file"
+                    id="fileDecode"
+                    hidden
+                    accept=".txt">
+
+            </div>
+
+            <div class="controls">
+
+                <button
+                    class="decode"
+                    id="decodeBtn">
+
+                    🔓 Decode
+
+                </button>
+
+                <button
+                    class="copy"
+                    id="copyDecode">
+
+                    📋 Copy
+
+                </button>
+
+                <button
+                    class="clear"
+                    id="clearDecode">
+
+                    🗑 Clear
+
+                </button>
+
+            </div>
+
+            <div class="stats">
+
+                <span>
+                    Characters:
+                    <b id="char2">0</b>
+                </span>
+
+                <span>
+                    Words:
+                    <b id="word2">0</b>
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 Made with ❤️ by
+            <a
+                href="https://github.com/probal2005"
+                target="_blank">
+                Probal Dhali
+            </a>
+        </p>
+
+    </footer>
+
+</div>
+
+<!-- Toast -->
+
+<div id="toast">
+    Copied Successfully
+</div>
+
+<!-- Settings Window -->
+
+<div id="settingsWindow">
+
+    <h2>Settings</h2>
+
+    <label for="shiftRange">
+        Shift Value
+    </label>
+
+    <input
+        type="range"
+        min="1"
+        max="25"
+        value="5"
+        id="shiftRange">
+
+    <p>
+        Current Shift:
+        <span id="shiftNumber">5</span>
+    </p>
+
+    <button id="closeSettings">
+        Close
+    </button>
+
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
