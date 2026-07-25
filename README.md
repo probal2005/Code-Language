@@ -46,16 +46,6 @@ It features a modern Glassmorphism UI, Dark & Light Mode, file upload/download s
 > Add your screenshot here
 
 ```
-assets/preview-dark.png
-```
-
----
-
-## Light Mode
-
-> Add your screenshot here
-
-```
 assets/code-language-encoder.png
 ```
 
